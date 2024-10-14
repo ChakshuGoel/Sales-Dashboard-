@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Retail Sales Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Retail Sales Dashboard</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/dashboard/">Dashboard</a>
+        </nav>
+        <div class="content">
+            <h2>Sales Performance Overview</h2>
+            <p>Welcome to your Retail Sales Dashboard. Select a date range and view key metrics and trends to make informed business decisions.</p>
+            
+            <div class="date-range">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" name="start-date">
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" name="end-date">
+                <button id="update-dashboard">Update Dashboard</button>
+            </div>
+            
+            <div class="kpi-container">
+                <div class="kpi">
+                    <h4>Total Sales</h4>
+                    <p class="kpi-value">$1,234,567</p>
+                </div>
+                <div class="kpi">
+                    <h4>Average Order Value</h4>
+                    <p class="kpi-value">$85.50</p>
+                </div>
+                <div class="kpi">
+                    <h4>Conversion Rate</h4>
+                    <p class="kpi-value">3.2%</p>
+                </div>
+            </div>
+            
+            <div class="dashboard">
+                <div class="chart">
+                    <h3>Sales Over Time</h3>
+                    <img src="https://via.placeholder.com/400x200.png?text=Sales+Over+Time+Chart" alt="Sales Over Time Chart">
+                    <p>This chart shows your sales trends over time, allowing you to identify patterns and seasonality in your data.</p>
+                </div>
+                
+                <div class="chart">
+                    <h3>Top Products by Revenue</h3>
+                    <img src="https://via.placeholder.com/400x200.png?text=Top+Products+Chart" alt="Top Products by Revenue Chart">
+                    <p>Discover your best-selling products and focus on what drives your revenue.</p>
+                </div>
+                
+                <div class="chart">
+                    <h3>Customer Segments</h3>
+                    <img src="https://via.placeholder.com/400x200.png?text=Customer+Segments+Chart" alt="Customer Segments Chart">
+                    <p>Understand your customer base better with this breakdown of different customer segments.</p>
+                </div>
+                
+                <div class="chart">
+                    <h3>Sales by Region</h3>
+                    <img src="https://via.placeholder.com/400x200.png?text=Sales+by+Region+Chart" alt="Sales by Region Chart">
+                    <p>Visualize your sales performance across different geographical regions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- In a real application, you would include necessary JavaScript libraries and custom scripts here -->
+    <!-- For example: -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <!-- <script src="{{ url_for('static', filename='dashboard.js') }}"></script> -->
+</body>
+</html>
